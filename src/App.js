@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from "./components/Header/Header";
+import Container from "./components/Container/Container";
+import { Switch, Route, Redirect } from "react-router-dom";
+import Home from "./components/Home/Home";
+import PokemonDetails from "./components/PokemonDetails/PokemonDetails";
+import Spinner from "./components/Spinner/Spinner";
+import { useState } from "react";
 function App() {
+  const [searchVal, setSearchVal] = useState("");
+  const [currentMon, setCurrentMon] = useState(false);
+  const handleChange = val => {
+    setSearchVal(val);
+  };
+
+  const handleNewMon = entry => {
+    setCurrentMon(entry);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header
+        handleChange={handleChange}
+        currentMon={currentMon}
+        handleNewMon={handleNewMon}
+      />
+
+      <Switch>
+        {/* <Route path="/home">
+          <Home />
+        </Route> */}
+        <Route path="/:pokemonId">
+          <PokemonDetails />
+        </Route>
+        <Route path="/">
+          <Container searchVal={searchVal} handleNewMon={handleNewMon} />
+        </Route>
+
+        <Route path="/*">
+          <Redirect to="/" />
+        </Route>
+      </Switch>
+    </>
   );
 }
 

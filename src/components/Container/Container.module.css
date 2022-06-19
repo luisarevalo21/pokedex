@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+
+  /* border: 3px solid red; */
+  padding: 5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  gap: 10px;
+}
+
+.button {
+  text-align: center;
+
+  border: none;
+  grid-column: 2 / span 2;
+  /* grid-row: auto; */
+  height: 20px;
+  /* margin: 0 auto; */
+  border-radius: 4%;
+  background-color: #47b5ff;
+  width: 100%;
+}
+
+.tab {
+  grid-column: 1 / span 3;
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+  }
+}

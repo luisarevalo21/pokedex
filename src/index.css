@@ -1,13 +1,105 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #06283d;
+
+  font-size: 16px;
+  /* //background
+
+  //06283D
+
+  //1363DF
+
+  //47B5FF
+
+  //DFF6FF */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.fire {
+  background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+  width: 100%;
+}
+
+.grass {
+  background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+  width: 100%;
+}
+
+.poison {
+  background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+  width: 100%;
+}
+
+.psychic {
+  background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+  width: 100%;
+  /* background-color: #f366b9; */
+}
+
+.ice {
+  background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+  width: 100%;
+}
+.flying {
+  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+  width: 100%;
+}
+
+.fairy {
+  background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+  width: 100%;
+}
+
+.water {
+  background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
+  width: 100%;
+}
+
+.fighting {
+  background: linear-gradient(180deg, #d56723 50%, #d56723 50%);
+  width: 100%;
+}
+
+.electric {
+  background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
+  width: 100%;
+}
+
+.ground {
+  background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+  width: 100%;
+}
+
+.rock {
+  background: linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
+  width: 100%;
+}
+.normal {
+  background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+  width: 100%;
+}
+.bug {
+  background: linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
+  width: 100%;
+}
+.steel {
+  background: linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
+  width: 100%;
+}
+.ghost {
+  background: linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
+  width: 100%;
+}
+.dark {
+  background: linear-gradient(180deg, #707070 50%, #707070 50%);
+  width: 100%;
 }
